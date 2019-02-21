@@ -1,0 +1,90 @@
+body {
+  background-color: #232323;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main_color: #232323;
+}
+
+/* header*/
+
+#h {
+  color: #fff;
+  height: 100px;
+  text-align: center;
+  background-color: var(--main_color);
+}
+
+#stripe > span {
+  color: #fff;
+  font-weight: bold;
+  padding: 0 15px;
+}
+
+#stripe {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--main_color);
+  height: 50px;
+}
+/*buttons*/
+button {
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background: var(--main_color);
+}
+.border {
+  border-top: 3px solid var(--main_color);
+  border-left: 3px solid var(--main_color);
+  border-right: 3px solid var(--main_color);
+}
+.selected {
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+}
+#btn {
+  margin-top: 5px;
+}
+/* grid*/
+#container {
+  margin: auto;
+
+  width: 80%;
+  height: 350px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.square {
+  background-color: firebrick;
+  width: 60%;
+  height: 85%;
+  text-decoration: none;
+  border-radius: 30%;
+}
+@media only screen and (max-width: 768px) {
+  .square {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .square {
+    width: 70%;
+    height: 70%;
+  }
+  #container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
