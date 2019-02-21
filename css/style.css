@@ -88,4 +88,18 @@ button {
     grid-template-columns: repeat(2, 1fr);
     margin-top:-40px;
   }
+    button {
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    color: #fff;
+    background: var(--main_color);
+  }
+    button {
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    color: #fff;
+    background: var(--main_color);
+  }
 }
